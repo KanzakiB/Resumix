@@ -1,0 +1,24 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.back-arrow {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+.back-arrow:hover {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #0a0a57;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #06063e;
+}

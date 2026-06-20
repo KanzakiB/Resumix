@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IndustryForm>
+    <Fields>
+        <Field>
+            <Label>Industry Name</Label>
+            <Name>industry_name</Name>
+            <Type>text</Type>
+            <Required>true</Required>
+        </Field>
+        <Field>
+            <Label>Created By</Label>
+            <Name>IndaddCreatedBy</Name>
+            <Type>text</Type>
+            <Readonly>true</Readonly>
+        </Field>
+        <Field>
+            <Label>Date Created</Label>
+            <Name>IndaddDateCreated</Name>
+            <Type>text</Type>
+            <Readonly>true</Readonly>
+        </Field>
+        <Field>
+            <Label>Last Updated</Label>
+            <Name>IndaddLastUpdated</Name>
+            <Type>text</Type>
+            <Readonly>true</Readonly>
+        </Field>
+    </Fields>
+    <SubmitButton>
+        <Label>Add Industry</Label>
+        <Id>triggerConfirmationModal</Id>
+    </SubmitButton>
+</IndustryForm>

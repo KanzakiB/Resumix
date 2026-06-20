@@ -1,0 +1,142 @@
+.close-logo img {
+    height: 50px;
+    width: auto;
+}
+
+.close-logo {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.adminimage {
+    border-radius: 50%;
+    border: 1px solid #000000;
+    
+}
+
+.sidebar {
+    width: 240px;
+    background-color: #00085C;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    z-index: 1030;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.sidebar-inner {
+    flex: 1;
+    overflow-y: auto; 
+}
+
+.logout-section {
+    padding: 1rem;
+}
+
+
+.main-wrapper {
+    margin-left: 240px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+.header-main {
+    background-color: #00085C;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar .nav-link {
+    padding: 0. 1rem;
+    font-size: .875rem;
+    color: white;
+    font-size: 15px;
+}
+
+.sidebar .nav-link.active {
+    background-color: #FFFFFF; 
+    color: #000000;
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+
+}
+
+.header-title {
+    margin-bottom: 0;
+    font-size: 1.5rem;
+}
+
+.burger-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.adminhead a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+@media (max-width: 991.98px) { 
+    .sidebar {
+        transform: translateX(-240px); 
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-main {
+        justify-content: space-between; 
+        padding: 0.8rem 1.5rem;
+    }
+
+    .main-wrapper {
+        margin-left: 0;
+    }
+
+    .adminhead, .header-title {
+        display: none !important;
+    }
+    
+    .header-main {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 992px) {
+    .sidebar {
+        transform: translateX(0); 
+    }
+
+    .main-wrapper {
+        margin-left: 240px; 
+    }
+}

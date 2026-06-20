@@ -1,0 +1,28 @@
+.header-main {
+    background-color: #00085C;
+    color: white;
+    height: 65px;
+}
+
+.close-logo img {
+    height: 40px;
+    width: auto;
+}
+
+.close-logo {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.footermain {
+    background-color: #00085C;
+    color: #FFFFFF;
+}
+
+.footer-logo {
+    width: auto;      
+    height: auto;     
+    object-fit: contain;
+}

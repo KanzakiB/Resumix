@@ -1,0 +1,104 @@
+.bodybg {
+    background-color: #F7F9FC;
+    font-family: 'Inter', sans-serif;
+    padding: 100px 20; 
+    min-height: 100vh; 
+    margin: 0;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 1.5rem;
+    background-color: #F7F9FC;
+    overflow-y: auto;
+    padding-bottom: 5rem;
+}
+
+.list-group-item.active {
+    background-color: transparent;
+    color: #0022BB;
+    margin-top: 15px !important;
+}
+
+.list-group-item:hover {
+    background-color: transparent;
+    color: #0022BB;
+}
+
+.col-md-3, .col-md-9 {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-group {
+    flex-grow: 1;
+}
+
+.card {
+    flex-grow: 1;
+}
+
+.tall-box {
+    min-height: 570px;
+    background-color: #FFFFFF;
+}
+
+.custom-shadow {
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.list-group-item{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.list-group a {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.emailtext{
+    width: 550px;
+}
+
+.sendbtn {
+    margin-top: 20px;
+    justify-content: center;
+    background-color: #00085C;
+    border-radius: 10px;
+    border: none;
+    width: 170px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.sendbtn:hover {
+    background-color: #01C9B5;
+    color: #FFFFFF;
+}
+
+/*RESPONSIVE PART*/
+@media (max-width: 767.98px) {
+    .emailtext{
+        width: 300px;
+    }
+
+    .nav-box {
+        min-height: 250px;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    .emailtext{
+        width: 400px;
+    }
+}

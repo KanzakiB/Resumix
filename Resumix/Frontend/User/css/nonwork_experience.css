@@ -1,0 +1,79 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to top for better content flow */
+    min-height: 100vh;
+    padding: 20px 0; /* Add some vertical padding */
+}
+.container {
+    max-width: 800px; /* Limit container width for better readability */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px; /* Rounded corners for the main container */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.form-control {
+    border-radius: 8px; /* Rounded corners for form elements */
+}
+.btn {
+    border-radius: 8px; /* Rounded corners for buttons */
+}
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+/* Styling for the icon buttons (formatting tools) */
+.icon-button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1em;
+    margin-right: 5px; /* Space between formatting buttons */
+    border: none; /* Remove border */
+    background-color: transparent; /* Transparent background */
+    color: #343a40; /* Dark grey color for icons */
+    transition: background-color 0.2s ease, color 0.2s ease; /* Smooth transition for hover */
+}
+.icon-button:hover {
+    background-color: #e9ecef; /* Light grey background on hover */
+    color: #000; /* Darker color on hover */
+}
+
+/* Combined container for textarea and tools with a single border */
+.editor-wrapper {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 10px; /* Padding inside this box */
+    margin-bottom: 15px; /* Space below the entire editor box */
+}
+
+#experienceText {
+    border: none; /* Remove default textarea border */
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 200px; /* Minimum height for the textarea */
+    width: 100%; /* Ensure it fills its container */
+    padding: 0; /* Remove default padding from textarea */
+    margin-bottom: 10px; /* Space between textarea and tools within the wrapper */
+}
+
+.preview-box {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    min-height: 100px;
+    word-wrap: break-word; /* Ensure long words break */
+}
+/* Style for the lightbulb popover */
+.popover {
+    max-width: 250px; /* Adjust max-width for the tip box */
+    font-size: 0.9em;
+}

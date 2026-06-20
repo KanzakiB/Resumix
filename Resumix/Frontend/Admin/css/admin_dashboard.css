@@ -1,0 +1,77 @@
+.bodybg {
+    background-color: #F7F9FC;
+    font-family: 'Inter', sans-serif;
+    padding: 100px 20; 
+    min-height: 100vh; 
+    margin: 0;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 1.5rem;
+    background-color: #F7F9FC;
+    overflow-y: auto;
+    padding-bottom: 5rem;
+}
+
+.four-cards {
+    height: 150px;
+    border-left: 10px solid #00085C;
+    border-radius: 10px;
+}
+
+.Title-page {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.admin-card {
+    border-left: solid 10px #01C9B5;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-icon {
+    margin-bottom: 10px;
+}
+
+.title2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.template-card{
+    padding: 20px;
+}
+
+.imgdisplay {
+    max-width: 100%;      
+    height: auto;         
+    border: 1px solid #000000;
+    display: block;
+    margin: 0 auto;      
+    object-fit: cover;   
+}
+
+.template-card img {
+    transition: transform 0.3s ease;
+}
+
+.template-card:hover img {
+    transform: scale(1.05);
+}
+
+
+@media (min-width: 768px) {
+    .imgdisplay {
+        height: 350px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .imgdisplay {
+        height: auto;
+    }
+}

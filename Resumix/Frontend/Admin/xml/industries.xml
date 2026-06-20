@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<industries>
+  <industry>
+    <id>15</id>
+    <name>Information Technology (IT)</name>
+  </industry>
+  <industry>
+    <id>16</id>
+    <name>Government and Public Administration</name>
+  </industry>
+  <industry>
+    <id>18</id>
+    <name>Healthcare Doctor</name>
+  </industry>
+  <industry>
+    <id>19</id>
+    <name>Real Estate</name>
+  </industry>
+  <industry>
+    <id>20</id>
+    <name>Architecture</name>
+  </industry>
+  <industry>
+    <id>22</id>
+    <name>Telecommunications</name>
+  </industry>
+  <industry>
+    <id>23</id>
+    <name>Agriculture and Farming</name>
+  </industry>
+</industries>

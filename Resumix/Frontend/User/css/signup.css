@@ -1,0 +1,136 @@
+.bodybg {
+    background-color: #F7F9FC;
+    font-family: 'Inter', sans-serif;
+    background-image: url('http://localhost/Resumix/Images/BG2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0; 
+    min-height: 91vh; 
+    display: flex;
+}
+
+.move-down-img {
+    margin-top: 40px; 
+}
+
+.move-down-form {
+    margin-top: 30px;
+}
+
+.form-text .text-danger {
+    font-size: 0.875em;
+    margin-top: 0.25rem;
+}
+
+.text-danger {
+    color: #FF0000 !important;
+    font-weight: bold !important;
+    display: none;
+}
+
+.requirements {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.req-list {
+    display: none;
+}
+
+.list-unstyled { 
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
+.list-unstyled li {
+    font-size: 0.875em;
+}
+
+.me-1 { 
+    margin-right: 0.25rem;
+}
+
+.toggle-password {
+    cursor: pointer;
+    padding: 0 0.75rem;
+}
+
+.input-group-text {
+    background-color: transparent;
+    border: none;
+}
+
+h2.title-start{
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.signin-button {
+    text-decoration: none;
+    color: #00085C;
+    font-weight: bold;
+}
+
+.signin-button:hover {
+    color: #01C9B5;
+}
+
+label {
+    font-weight: bold;
+}
+
+.input-group input{
+    width: 400px;
+}
+
+.form-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.registerbtn {
+    margin-top: 15px;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #00085C;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid #00085C;
+}
+
+.registerbtn:hover,
+.registerbtn:active {
+    background-color: #01C9B5 !important;
+    border: 1px solid #01C9B5 !important;
+}
+
+input.form-control {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 10px 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+    color: #333;
+}
+
+input.form-control:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: #01C9B5 !important;
+}
+
+
+
+/*RESPONSIVE PART*/
+@media (max-width: 767.98px) {
+    .bodybg {
+        background-image: none;
+        background-color: #F7F9FC;
+    }
+
+}
+

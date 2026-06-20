@@ -1,0 +1,171 @@
+.bodybg {
+    background-color: #F7F9FC;
+    font-family: 'Inter', sans-serif;
+    padding: 100px 20; 
+    min-height: 100vh; 
+    margin: 0;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 1.5rem;
+    background-color: #F7F9FC;
+    overflow-y: auto;
+    padding-bottom: 5rem;
+}
+
+.list-group-item.active {
+    background-color: transparent;
+    color: #0022BB;
+}
+
+.list-group-item:hover {
+    background-color: transparent;
+    color: #0022BB;
+}
+
+.col-md-3, .col-md-9 {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-group {
+    flex-grow: 1;
+}
+
+.card {
+    flex-grow: 1;
+}
+
+.tall-box {
+    min-height: 570px;
+    background-color: #FFFFFF;
+}
+
+.custom-shadow {
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.4);
+    /*border: none;*/
+    border-radius: 10px;
+}
+
+.list-group-item{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.list-group a {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.imgprofile  img{
+    margin-left: 50px;
+}
+
+.imgfunction {
+    margin-left: 20px;
+}
+
+.adminName {
+    font-size: 24px;
+}
+
+.editbtn, .savebtn, .savebtn2{
+    justify-content: center;
+    background-color: #00085C;
+    border-radius: 10px;
+    border: none;
+    width: 170px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.editbtn:hover, .savebtn:hover, .savebtn2:hover{
+    background-color: #01C9B5;
+    color: #FFFFFF;
+}
+
+.savebtn2 {
+    margin-top: 20px;
+}
+
+.infocont {
+    margin-top: 40px;
+    padding: 15px;
+}
+
+.infodisplay{
+    margin-top: 30px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input.form-control {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 10px 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+    color: #333;
+}
+
+input.form-control:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: #01C9B5 !important;
+}
+
+.text-danger {
+    color: #FF0000 !important;
+    font-weight: bold !important;
+}
+
+.error-message1, .error-message2{
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .imgprofile img{
+        margin-left: 0;
+    }
+
+    .imgfunction {
+        margin-left: 0;
+    }
+
+    .nav-box {
+        min-height: 250px;
+    }
+
+    .savebtn2 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .imgprofile img{
+        margin-left: 0;
+    }
+
+    .imgfunction {
+        margin-left: 0;
+    }
+
+    .nav-box {
+        min-height: 250px;
+    }
+
+    .savebtn2 {
+        width: 100%;
+    }
+}

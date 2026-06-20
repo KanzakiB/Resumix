@@ -1,0 +1,75 @@
+/* Styles specific to the header component */
+.custom-header-bg {
+    background-color: #00085C; /* Dark blue header background */
+    color: white; /* Default text color for direct children of the nav */
+    padding: 0.7rem 1.5rem; /* Control header vertical padding directly */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Explicitly set a min-height for better control over the header's size */
+    min-height: 50px; /* Adjust this value as needed to control overall header height */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Retain subtle shadow */
+    position: relative; /* Needed for absolute positioning of logo */
+}
+
+.custom-header-bg .container-fluid {
+    display: flex;
+    justify-content: space-between; /* Pushes items to ends */
+    align-items: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    /* Ensure no extra padding from Bootstrap's .container-fluid if it's causing issues */
+    width: 100%; /* Ensure it spans full width */
+}
+
+.header-logo-center {
+    position: absolute; /* Position absolutely to center */
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none; /* Remove underline */
+    display: flex; /* For aligning logo image and text */
+    align-items: center;
+    white-space: nowrap; /* Prevent "RESUMIX" from wrapping */
+}
+
+.header-logo-img {
+    height: 30px; /* Adjusted to a reasonable size based on header height, can be smaller */
+    width: auto; /* Maintain aspect ratio */
+    /* Add max-height to ensure it doesn't overflow its immediate container if needed */
+    max-height: 80%; /* Example: Max 80% of its parent's height if parent has controlled height */
+}
+
+.header-logo-text {
+    color: white; /* Changed to white to be visible on dark blue background */
+    font-weight: 700;
+    font-size: 1.2rem; /* Adjust font size if logo is too small */
+}
+
+.text-dark-link {
+    color: white !important; /* Changed to white to be visible on dark blue background */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.text-dark-link:hover {
+    color: lightgray !important; /* Lighter color on hover */
+}
+
+/* Responsive Adjustments for Header */
+@media (max-width: 767.98px) {
+    .header-logo-center {
+        position: static; /* Remove absolute positioning on small screens */
+        transform: none;
+        margin: 0 auto; /* Center with flexbox */
+    }
+    .custom-header-bg .container-fluid {
+        flex-wrap: nowrap; /* Prevent wrapping on small screens to keep items on one line */
+    }
+    .header-logo-text {
+        font-size: 1rem; /* Smaller font on small screens */
+    }
+    .header-logo-img {
+        height: 25px; /* Adjust logo size for small screens */
+    }
+}

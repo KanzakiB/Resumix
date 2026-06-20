@@ -1,0 +1,44 @@
+.custom-modal-backdrop   {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.custom-modal-box {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 600px !important;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#modalMessage {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#modalOkBtn {
+    width: 100px;
+    background-color: #00085C;
+    border: 1px solid #00085C;
+    font-weight: bold;
+}
+
+#modalOkBtn:hover {
+    background-color: #01C9B5;
+    border: 1px solid #01C9B5;
+}
+
+.hidden {
+    display: none !important;
+}

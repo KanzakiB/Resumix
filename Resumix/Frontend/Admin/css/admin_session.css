@@ -1,0 +1,195 @@
+.bodybg {
+    background-color: #F7F9FC;
+    font-family: 'Inter', sans-serif;
+    padding: 100px 20; 
+    min-height: 100vh; 
+    margin: 0;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 1.5rem;
+    background-color: #F7F9FC;
+    overflow-y: auto;
+    padding-bottom: 5rem;
+}
+
+.list-group-item.active {
+    background-color: transparent;
+    color: #0022BB;
+    margin-top: 15px !important;
+}
+
+.list-group-item:hover {
+    background-color: transparent;
+    color: #0022BB;
+}
+
+.col-md-3, .col-md-9 {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-group {
+    flex-grow: 1;
+}
+
+.card {
+    flex-grow: 1;
+}
+
+.tall-box {
+    min-height: 570px;
+    background-color: #FFFFFF;
+}
+
+.custom-shadow {
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.list-group-item{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.list-group a {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.orders-list {
+    margin-top: -10px;
+    width: 100%;
+    min-width: 600px; 
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    font-weight: bold;
+}
+
+.orders-list thead th {
+    background-color: #00085C;
+    color: #FFFFFF;
+    font-weight: 600;
+    padding: 12px 20px;
+    text-align: left;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.orders-list thead th:first-child {
+    border-top-left-radius: 8px;
+}
+
+.orders-list thead th:last-child {
+    border-top-right-radius: 8px;
+}
+
+.orders-list tbody tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+.orders-list tbody tr:nth-child(odd) {
+    background-color: #F1F4F9; 
+}
+
+.orders-list thead th:nth-child(2),
+.orders-list thead th:nth-child(3) {
+    text-align: center;
+}
+
+.orders-list tbody td:nth-child(2),
+.orders-list tbody td:nth-child(3) {
+    text-align: center;
+}
+
+
+.orders-list tbody tr {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.orders-list tbody tr:hover {
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.orders-list td {
+    padding: 14px 20px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.orders-list td:first-child {
+    border-left: 4px solid #00085C;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.orders-list td:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.orders-list a {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: var(--button_color);
+    color: white;
+    border-radius: 4px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.orders-list a:hover {
+    background-color: #12181f;
+}
+
+
+.table-responsive-wrapper {
+    padding: 10px;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.numpage .page-link {
+    border-radius: 5px; 
+    color: #000000;
+    font-weight: bold; 
+}
+
+.numpage.active > .page-link {
+    color: #FFFFFF;
+    background-color: #00085C;
+    border-color: #00085C;
+}
+
+@media (max-width: 768px) {
+    .nav-box {
+        min-height: 250px;
+    }
+
+    .mainbox {
+        height: 630px;
+    }
+
+    .custom-pagination {
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 991.98px) {
+    .nav-box {
+        min-height: 250px;
+    }
+
+}

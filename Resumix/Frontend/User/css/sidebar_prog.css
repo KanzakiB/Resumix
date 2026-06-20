@@ -1,0 +1,121 @@
+/* Custom CSS for sidebar_prog.css */
+
+/* Dark Blue Background */
+.bg-dark-blue {
+    background-color: #00004d !important; /* A deep navy blue */
+}
+
+/* Light Blue for Progress Bar */
+.bg-light-blue {
+    background-color: #4CAF50 !important; /* A shade of green for progress, as seen in image */
+}
+
+.sidebar-container {
+    width: 280px; /* Fixed width for desktop */
+    min-height: 100vh; /* Full height */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    font-family: 'Inter', sans-serif;
+    position: sticky; /* Makes it stick when scrolling */
+    top: 0; /* Aligns to the top */
+    left: 0; /* Aligns to the left */
+}
+
+.sidebar-container .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem; /* Rounded corners for nav items */
+    transition: background-color 0.2s ease-in-out;
+}
+
+.sidebar-container .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+}
+
+.sidebar-container .nav-link.active-step {
+    font-weight: 600; /* Bolder text for active step */
+}
+
+.sidebar-container .step-indicator {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-right: 1rem;
+    flex-shrink: 0; /* Prevent indicator from shrinking */
+}
+
+.sidebar-container .step-indicator.active {
+    background-color: #fff;
+    color: #00004d; /* Text color inside active indicator */
+    font-weight: bold;
+    border-color: #fff;
+}
+
+.sidebar-container hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar-container .progress {
+    background-color: rgba(255, 255, 255, 0.2); /* Background for the progress bar track */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 767.98px) {
+    .sidebar-container {
+        width: 100%; /* Full width on small screens */
+        min-height: auto; /* Auto height */
+        position: relative; /* Remove sticky on mobile */
+        flex-direction: row !important; /* Arrange items horizontally */
+        flex-wrap: wrap; /* Allow items to wrap */
+        padding-bottom: 0; /* Adjust padding */
+    }
+
+    .sidebar-container .nav-pills {
+        flex-direction: row !important; /* Horizontal nav pills */
+        padding: 1rem !important;
+        justify-content: space-around; /* Distribute items evenly */
+        width: 100%;
+    }
+
+    .sidebar-container .nav-item {
+        margin-bottom: 0 !important; /* Remove vertical margin */
+    }
+
+    .sidebar-container .nav-link {
+        padding: 0.5rem 0.75rem; /* Smaller padding for horizontal links */
+        font-size: 0.85rem;
+        flex-direction: column; /* Stack indicator and text */
+        text-align: center;
+    }
+
+    .sidebar-container .step-indicator {
+        margin-right: 0;
+        margin-bottom: 0.25rem; /* Space between indicator and text */
+        width: 20px;
+        height: 20px;
+        font-size: 0.7rem;
+    }
+
+    .sidebar-container .mb-md-0 {
+        margin-bottom: 0 !important; /* Remove bottom margin for logo on mobile */
+    }
+
+    .sidebar-container .p-4 {
+        padding: 1rem !important; /* Adjust padding for logo/progress */
+    }
+
+    .sidebar-container hr {
+        display: none; /* Hide separator on mobile */
+    }
+
+    .sidebar-container .mt-auto {
+        margin-top: 0 !important; /* Remove auto margin on mobile */
+        width: 100%;
+        padding: 1rem 1rem 0.5rem 1rem !important; /* Adjust padding for progress section */
+    }
+}

@@ -1,0 +1,104 @@
+.bodybg {
+    background-color: #F7F9FC;
+    font-family: 'Inter', sans-serif;
+    padding: 100px 20; 
+    min-height: 100vh; 
+    margin: 0;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 1.5rem;
+    background-color: #F7F9FC;
+    overflow-y: auto;
+    padding-bottom: 5rem;
+}
+
+h4.Title-page {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.create-button {
+    justify-content: center;
+    background-color: #00085C;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    width: 140px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.create-button:hover {
+    background-color: #01C9B5;
+    color: #FFFFFF;
+}
+
+.resume-card {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.create-new-resume {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: left;
+    color: #6c757d;
+    cursor: pointer;
+    height: 235px;
+}
+
+ .resume-actions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+    
+.resume-actions li {
+    margin-bottom: 5px;
+}
+           
+.resume-actions a {
+    text-decoration: none;
+    color: #343a40;
+    display: flex;
+    align-items: center;
+}
+            
+.resume-actions a i {           
+    margin-right: 5px;          
+}
+            
+.resume-preview-img {               
+    width: 80px;               
+    height: auto;                
+    border: 1px solid #ced4da;                
+    margin-right: 10px;            
+}
+
+.resume-card, .create-new-resume{
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: #fff; 
+}
+
+.resume-card:hover, .create-new-resume:hover {
+    background-color: #f0f8ff; 
+    transform: scale(1.02); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+.resume-card:hover .resume-preview-img {
+    transform: scale(1.01); 
+}
+
+.resume-preview-img {
+    transition: transform 0.3s ease;
+}

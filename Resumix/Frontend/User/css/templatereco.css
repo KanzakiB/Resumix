@@ -1,0 +1,183 @@
+/* General page layout consistent with previous pages */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; /* Light grey background for the whole page */
+    color: #333; /* Default text color */
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Skip link button (positioned at top right) */
+.skip-link-container {
+    position: absolute;
+    top: 15px; /* Distance from the top */
+    left: 20px; /* Distance from the right */
+    z-index: 1050; /* Ensure it's above other content */
+}
+
+.skip-link-button {
+    background-color: #00085C; /* Dark blue background for consistency with header */
+    color: white; /* White text */
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.skip-link-button:hover {
+    background-color: #001280; /* Slightly darker blue on hover */
+    color: lightgray;
+}
+
+/* Main content container */
+.templatereco-content {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+}
+
+.title-text {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    line-height: 1.3;
+    color: #333;
+}
+
+.description-text {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Template Cards */
+.template-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    /* `h-100` from Bootstrap flexbox might be removed to allow height to be dynamic */
+}
+
+.template-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top-wrapper {
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 280px; /* Adjust height based on your image size */
+    overflow: hidden;
+    position: relative; /* Crucial for positioning the overlay on top of the image */
+}
+
+.template-card .card-img-top {
+    width: 100%; /* Ensures image fills its container */
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* New: Overlay for button and template name - sits inside card-img-top-wrapper */
+.template-content-overlay {
+    position: absolute;
+    bottom: 0; /* Position at the bottom of the card-img-top-wrapper */
+    left: 0;
+    width: 100%;
+    /* Background color as seen in the image, likely a semi-transparent white/blue-ish */
+    background-color: rgba(255, 255, 255, 0.9); /* Example: 90% opaque white */
+    padding: 10px 0; /* Vertical padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #e0e0e0; /* A subtle line like in the image */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+/* Styles for the "Use This Template" button */
+.use-template-btn {
+    /* The color from the image appears teal/aqua */
+    background-color: #1abc9c; /* Example: A vibrant teal color */
+    color: #fff;
+    padding: 10px 25px; /* Adjusted padding for a larger button as per image */
+    border: none;
+    border-radius: 5px; /* Matches the image */
+    font-size: 1em; /* Adjusted font size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 80%; /* Make button fill most of the width of its container */
+    max-width: 220px; /* Adjusted max width for larger button */
+    margin-bottom: 5px; /* Space between button and name */
+}
+
+.use-template-btn:hover {
+    background-color: #16a085; /* Darker teal on hover */
+}
+
+/* Style for the "Name" below the template card button */
+.template-style-name {
+    font-size: 0.9rem; /* Adjusted font size */
+    color: #666;
+    text-align: center;
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 991.98px) {
+    .templatereco-content {
+        padding: 30px;
+    }
+    .title-text {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .templatereco-content {
+        padding: 20px;
+    }
+    .title-text {
+        font-size: 1.6em;
+    }
+    .use-template-btn {
+        padding: 8px 20px; /* Smaller padding for smaller screens */
+        font-size: 0.9em;
+        max-width: 180px; /* Adjust max-width for smaller screens */
+    }
+    .skip-link-container {
+        top: 10px;
+        left: 10px;
+        font-size: 0.9rem;
+    }
+    .skip-link-button {
+        padding: 6px 12px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .templatereco-content {
+        padding: 15px;
+    }
+    .title-text {
+        font-size: 1.4em;
+    }
+    .card-img-top-wrapper {
+        min-height: 220px; /* Adjust height for smaller screens */
+    }
+}

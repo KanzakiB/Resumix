@@ -1,0 +1,54 @@
+/* Custom CSS for personal_info.css */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.card {
+    border: none;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.form-control, .form-select {
+    border-color: #dee2e6;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.btn-outline-dark {
+    border-color: #343a40;
+    color: #343a40;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn-outline-dark:hover {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.icon-lg {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .card {
+        padding: 1.5rem !important; /* Adjust padding for smaller screens */
+    }
+}

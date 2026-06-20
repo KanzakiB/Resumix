@@ -1,0 +1,78 @@
+/* Custom CSS for work_history.css */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5faff; /* Light gray background */
+}
+
+.card {
+    border: none;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.icon-lg {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+}
+
+.icon-sm {
+    width: 18px; /* Smaller icons for list items */
+    height: 18px;
+    vertical-align: middle; /* Align with text */
+}
+
+.info-box {
+    border-color: #d8ecff !important; /* Lighter border for info boxes */
+    background-color: #ffffff; /* Changed to white as per image */
+    color: #212529; /* Ensure text is dark on white background */
+}
+
+.info-box ul {
+    padding-left: 0; /* Remove default list padding */
+}
+
+.info-box li {
+    display: flex; /* Use flexbox for icon and text alignment */
+    align-items: flex-start;
+    line-height: 1.5;
+}
+
+.info-box li .lucide {
+    margin-top: 2px; /* Adjust icon vertical alignment */
+}
+
+/* Updated styling for primary buttons (Yes, I do / No, I do not have) */
+.btn-primary {
+    background-color: #00085C; /* Dark blue as requested */
+    border-color: #00085C;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: #000040; /* Slightly darker shade on hover */
+    border-color: #000040;
+}
+
+/* Styling for the 'Preview' button (remains outline dark) */
+.btn-outline-dark {
+    border-color: #343a40;
+    color: #343a40;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.btn-outline-dark:hover {
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .card {
+        padding: 1.5rem !important; /* Adjust padding for smaller screens */
+    }
+
+    /* Removed explicit width for .btn-lg to allow flex-grow-1 to take full width when wrapped */
+   /*  btn-lg {
+        width: 25%;
+    }*/
+}

@@ -1,0 +1,85 @@
+#userFilterModal .modal-body {
+    padding: 20px 25px;
+}
+
+#userFilterModal .modal-dialog {
+    max-width: 400px;
+}
+
+#userFilterModal .modal-content {
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+#userFilterModal .form-check {
+    margin-bottom: 10px;
+}
+
+#userFilterModal .modal-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#userFilterModal .modal-header,
+#userFilterModal .modal-footer {
+    border: none;
+    padding: 15px 25px;
+}
+
+#userFilterModal .modal-footer .btn {
+    min-width: 100px;
+}
+
+#userFilterModal .modal-body {
+    border-radius: 10px;
+}
+
+.modaldiv {
+    margin-left: 50px;
+}
+
+.titlecont {
+   font-weight: bold;
+}
+
+#userFilterModal .form-check-input:checked + .form-check-label {
+    font-weight: bold;
+    color: #000000;
+}
+
+.cancelbtn, .cancelbtn:hover {
+    justify-content: center;
+    background-color: #00085C;
+    border-radius: 10px;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.sortbtn, .sortbtn:hover  {
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid #000000;
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #000000;
+}
+
+.modal-footer {
+    margin-top: -20px; 
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .modal-dialog {
+        margin: 1.75rem auto;
+        max-width: 90% !important; 
+    }
+}

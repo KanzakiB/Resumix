@@ -1,0 +1,229 @@
+.bodybg {
+    background-color: #F7F9FC;
+    font-family: 'Inter', sans-serif;
+    padding: 100px 20; 
+    margin: 0;
+}
+
+.profile-wrapper {
+    flex-grow: 1;
+    overflow-y: auto;
+    position: relative;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 1.5rem;
+    background-color: #F7F9FC;
+    overflow-y: visible !important;
+}
+
+.list-group-item.active {
+    background-color: transparent;
+    color: #0022BB;
+    margin-top: 15px !important;
+}
+
+.list-group-item:hover {
+    background-color: transparent;
+    color: #0022BB;
+}
+
+.col-md-3, .col-md-9 {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-group {
+    flex-grow: 1;
+}
+
+.card {
+    flex-grow: 1;
+}
+
+.tall-box {
+    min-height: 570px;
+    background-color: #FFFFFF;
+}
+
+.custom-shadow {
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.4);
+    /*border: none;*/
+    border-radius: 10px;
+}
+
+.list-group-item{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.list-group a {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.card-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#changePassForm .form-control {
+    max-width: 400px;
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input.form-control {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 10px 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #fff;
+    color: #333;
+}
+
+input.form-control:focus {
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: #01C9B5 !important;
+}
+
+.text-danger {
+    color: #FF0000 !important;
+    font-weight: bold !important;
+}
+
+.requirements {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.error-message1, .error-message2, .error-message3, .reqlist {
+    display: none;
+}
+
+.savebtn {
+    margin-top: 15px;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #00085C;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid #00085C;
+    width: 200px;
+}
+
+.savebtn:hover,
+.savebtn:active {
+    background-color: #01C9B5 !important;
+    border: 1px solid #01C9B5 !important;
+}
+
+.list-unstyled li {
+    font-size: 0.875em;
+}
+
+
+.cover-image-section {
+    position: relative;
+    width: 100%;
+    height: 200px; 
+    overflow: hidden;
+}
+
+
+.cover-image-section .cover-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.change-cover-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color: #00085C;
+    color: #FFFFFF;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    width: 200px;
+    justify-content: center;
+}
+
+
+.change-cover-btn:hover {
+    background-color: #01C9B5;
+    color: #FFFFFF;
+}
+
+
+.tall-box {
+    position: relative;
+    top: -100px; 
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 7px 7px rgba(0,0,0,0.4);
+    height: 100px;
+    z-index: 1;
+    margin-bottom: -100px;
+}
+
+#modalOkBtnPass {
+    width: 100px;
+    background-color: #00085C;
+    border: 1px solid #00085C;
+    font-weight: bold;
+}
+
+#modalOkBtnPass:hover {
+    background-color: #01C9B5;
+    border: 1px solid #01C9B5;
+}
+
+/*RESPONSIVE PART*/
+@media (max-width: 767.98px) {
+    .savebtn {
+        width: 100%;
+    }
+
+    .nav-box {
+        min-height: 250px;
+    }
+
+    .contentbox {
+        height: auto;
+    }
+
+    .tall-box {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .nav-box {
+        min-height: 250px;
+    }
+
+    .contentbox {
+        height: auto;
+    }
+
+    
+    .tall-box {
+        margin-bottom: 0;
+    }
+
+}
+
