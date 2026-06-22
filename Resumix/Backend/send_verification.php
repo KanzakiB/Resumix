@@ -12,12 +12,12 @@ function sendVerification($email, $token, $username) {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'aera.montefalco33@gmail.com';
-    $mail->Password = 'cmcw pnwe fqxx meih'; // App password
+    $mail->Username = ''; // email to use
+    $mail->Password = ''; // App password
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
-    $mail->setFrom('aera.montefalco33@gmail.com', 'RESUMIX');
+    $mail->setFrom('email@gmail.com', 'RESUMIX');
     $mail->addAddress($email);
     $mail->isHTML(true);
 
